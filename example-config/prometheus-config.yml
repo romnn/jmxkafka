@@ -1,0 +1,17 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+  external_labels:
+    monitor: "my-monitor"
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["prometheus:9090"]
+
+  # JMX exporter that runs on each kafka broker
+  - job_name: "kafka"
+    static_configs:
+      - targets: ["kafka:7072"]
+        labels:
+          alias: "kafka"
