@@ -1,5 +1,8 @@
 ## Pre configured JMX kafka docker container
 
+![Docker Build Status](https://img.shields.io/docker/build/romnn/jmxkafka)
+![Docker Pulls](https://img.shields.io/docker/pulls/romnn/jmxkafka?color=9cf)
+
 ```
 docker pull romnn/jmxkafka
 ```
